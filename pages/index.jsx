@@ -10,15 +10,16 @@ export default function Home() {
   if (!isAuthenticated) return <Login />;
 
   return (
-    <div className='h-screen'>
+    <div className='h-screen overflow-hidden'>
       <Head>
         <title>Web3 Chat</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* Body */}
-      <div className='bg-slate-100 max-w-screen-lg mx-auto'>
+      <div className='bg-slate-100 max-w-screen-lg mx-auto h-full flex flex-col'>
         <Profile />
+
         <ChatRoom />
       </div>
       {/* Body End */}

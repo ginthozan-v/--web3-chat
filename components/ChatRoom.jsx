@@ -1,15 +1,18 @@
 import React from 'react'
+import Message from './Message';
+import SendMessage from './SendMessage'
 
 const ChatRoom = () => {
     return (
-        <div className='mt-16 relative'>
-            <div className='bg-red-200 h-full px-4 '>
-                ChatRoom
+        <div className='relative mt-6 flex-1'>
+
+            {/* Chat */}
+            <div className='h-full overflow-y-scroll px-4 sm:px-14 pb-10'>
+                <Message />
             </div>
-            <div className='absolute bottom-0 bg-slate-600 w-full py-4 px-2 flex gap-1'>
-                <input type="text" placeholder='Enter a message' className='w-full bg-transparent focus:outline-none text-white' />
-                <button className=' text-red-400'>send</button>
-            </div>
+
+            {/* Input */}
+            <SendMessage />
         </div>
     )
 }

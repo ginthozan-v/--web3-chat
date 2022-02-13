@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { useMoralis } from 'react-moralis'
+import { ByMoralis, useMoralis } from 'react-moralis'
 import Cover from '../public/cover.jpg'
 import { LogoutIcon } from '@heroicons/react/outline'
 import { PencilAltIcon } from '@heroicons/react/solid'
@@ -24,7 +24,7 @@ const Profile = () => {
 
     return (
         <div>
-            <div className='relative h-28 sm:h-64 full'>
+            <div className='relative h-28 sm:h-52 full'>
                 <Image src={Cover} layout="fill" objectFit="cover" />
                 <LogoutIcon
                     className='w-6 h-6 absolute bottom-2 right-2 text-white cursor-pointer opacity-75 hover:opacity-100 transition duration-500'
@@ -43,6 +43,7 @@ const Profile = () => {
                     />
                 </button>
             </h1>
+            <ByMoralis variant='dark' width={120} style={{ margin: "0 auto" }} />
         </div>
     )
 }
