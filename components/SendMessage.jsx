@@ -22,6 +22,8 @@ const SendMessage = () => {
         }, (error) => {
             console.log("💀 error at SendMessage.jsx line:24", error)
         });
+
+        setMessage('');
     }
 
     return (
