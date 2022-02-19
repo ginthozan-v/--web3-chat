@@ -1,0 +1,32 @@
+{
+  "theme_color": "#f69435",
+  "background_color": "#ffffff",
+  "display": "fullscreen",
+  "scope": "/",
+  "start_url": "/",
+  "app_name": "Web3-Chat",
+  "short_name": "Web3-Chat",
+  "description": "A Web3-Chat Application",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-256x256.png",
+      "sizes": "256x",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-384x384.png",
+      "sizes": "384x",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x",
+      "type": "image/png"
+    }
+  ]
+}
