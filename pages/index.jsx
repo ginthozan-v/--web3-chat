@@ -3,6 +3,7 @@ import Login from '../components/Login'
 import Profile from '../components/Profile'
 import ChatRoom from '../components/ChatRoom'
 import { useMoralis } from "react-moralis"
+import SendMessage from '../components/SendMessage'
 
 export default function Home() {
   const { isAuthenticated } = useMoralis();
@@ -19,8 +20,8 @@ export default function Home() {
       {/* Body */}
       <div className='bg-slate-100 max-w-screen-lg mx-auto h-full flex flex-col'>
         <Profile />
-
         <ChatRoom />
+        <SendMessage />
       </div>
       {/* Body End */}
 

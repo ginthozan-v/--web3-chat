@@ -27,7 +27,7 @@ const SendMessage = () => {
     }
 
     return (
-        <form className='absolute bottom-0 bg-slate-600 w-full py-4 px-2 flex items-center'>
+        <form className='flex-none bg-slate-600 w-full py-4 px-2 flex items-center'>
             <input type="text" placeholder='Enter a message' value={message} onChange={(e) => setMessage(e.target.value)}
                 className='w-full bg-transparent focus:outline-none text-white px-4 sm:px-10' />
             <button
