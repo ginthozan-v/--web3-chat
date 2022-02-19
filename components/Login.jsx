@@ -4,7 +4,7 @@ import { useMoralis } from "react-moralis";
 import BG from '../public/meta-bg.png'
 
 const Login = () => {
-    const { authenticate, isInitializing } = useMoralis();
+    const { authenticate, isInitializing, authError } = useMoralis();
 
     const auth = () => {
         authenticate().then((user) => {
@@ -12,6 +12,10 @@ const Login = () => {
         }).catch(err => {
             alert(err)
         })
+    }
+
+    if (authError) {
+        alert(authError);
     }
 
     return (
